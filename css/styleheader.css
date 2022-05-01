@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+}
+
+.navegacion{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  transition: 0.7s;
+  z-index: 10;
+}
+
+header.abajo{
+  background: #EFF3F5;
+}
+
+.logo{
+  position: relative;
+  transition: 1.5s;
+  size: 10px;
+  height: 50px;
+  width: 200px;
+  margin-top: 1em;
+}
+
+.navoptions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navoptions li{
+  margin-right: 1em;
+}
+
+.navegacion ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navegacion ul li{
+  list-style: none;
+}
+
+.navegacion ul li a{
+  position:relative;
+  margin: 0 1em;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  transition: 0.7s;
+}
+
+.inicio:hover{
+  background-color: #D8D8D8;
+  transition: 0.5s;
+  border-radius: 100px;
+  margin-right: 2em;
+}
+
+.avisos:hover{
+  background-color: #D8D8D8;
+  transition: 0.5s;
+  border-radius: 100px;
+  margin-right: 2em;
+}
+
+.conferencias:hover{
+  background-color: #D8D8D8;
+  transition: 0.5s;
+  border-radius: 100px;
+  margin-right: 2em;
+}
+
+.contacto:hover{
+  background-color: #D8D8D8;
+  transition: 0.5s;
+  border-radius: 100px;
+  margin-right: 2em;
+}
+
+.zona1{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+header.abajo ul li a{
+  color: #000;
+}
