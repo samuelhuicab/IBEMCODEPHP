@@ -45,8 +45,9 @@
               <h2>Nosotros</h2>
                 <a href="http://localhost:8082/IBEMCODEPHP/">Inicio</a>
                 <a href="#">Avisos</a>
-                <a href="#">Conferencias</a>
-                <a href="#contactanos">Contacto</a>
+                <a href="#acthoy">Actividades</a>
+                <a href="#">Proximas Actividades</a>
+                <a href="#contactanos">Contáctanos</a>
             </div>
 
             <div class="box__footer">
@@ -60,7 +61,7 @@
         <div class="box__copyright">
             <hr>
             <p>Todos los derechos reservados © 2022 <b>Iglesia Bautista El Mesías</b></p>
-            <p>Elaborado por <b>IBEMCODE</b></p>
+            <p>Desarrollado por <b>IBEMCODE</b></p>
         </div>
 
         <script type="text/javascript">
