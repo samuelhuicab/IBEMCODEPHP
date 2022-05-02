@@ -8,7 +8,7 @@
   <br>
   <main>
     <div class="item" id="contactanos">
-      <h1>Contacto</h1>
+      <h1>CONTACTO</h1>
     </div>
   </main>
   <div class="box__contacto">
