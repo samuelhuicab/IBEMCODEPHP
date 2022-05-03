@@ -41,6 +41,9 @@ try {
            </div>
        </div>
        <?php } ?>
+       <?php
+       $conn->close();
+        ?>
    </div>
    </div>
 <!---Fin seccion de avisos------->
