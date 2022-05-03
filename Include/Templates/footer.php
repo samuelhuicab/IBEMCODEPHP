@@ -8,7 +8,7 @@
   <br>
   <main>
     <div class="item" id="contactanos">
-      <h1>CONTACTO</h1>
+      <h1 style="color: #40C1A5">CONTACTO</h1>
     </div>
   </main>
   <div class="box__contacto">
@@ -44,16 +44,16 @@
             <div class="box__footer">
               <h2>Nosotros</h2>
                 <a href="http://localhost:8082/IBEMCODEPHP/">Inicio</a>
-                <a href="#">Avisos</a>
+                <a href="#activ">Proximas Actividades</a>
                 <a href="#acthoy">Actividades</a>
-                <a href="#">Proximas Actividades</a>
+                <a href="avisos.php#avisos">Avisos</a>
                 <a href="#contactanos">Contáctanos</a>
             </div>
 
             <div class="box__footer">
                 <h2>Redes Sociales</h2>
-                <a href="https://www.facebook.com/elmesias.mx"> <i class="fab fa-facebook-square"></i> Facebook</a>
-                <a href="https://www.youtube.com/c/IBEMYucat%C3%A1n"><i class="fa-brands fa-youtube"></i> Youtube</a>
+                <a href="https://www.facebook.com/elmesias.mx" target="_blank"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="https://www.youtube.com/c/IBEMYucat%C3%A1n" target="_blank"><i class="fa-brands fa-youtube"></i> Youtube</a>
             </div>
 
         </div>

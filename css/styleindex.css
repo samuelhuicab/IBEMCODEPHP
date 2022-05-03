@@ -31,7 +31,7 @@ body {
 .container{
 	display: flex;
 	justify-content: center;
-	height: 100vh;
+	height: 400px;
   align-items: center;
   overflow: hidden;
 }
@@ -82,9 +82,9 @@ body {
 	padding: 30px;
 	width: 100%;
 	display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
 
 }
 
@@ -93,20 +93,32 @@ body {
 	color: var(--black-text)
 }
 
-.button {
-	border-radius: 3rem;
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-	color: var(--white-text);
-	font-size: 1.2rem;
-	padding: .8rem 1.5rem;
-	letter-spacing: .1rem;
-	align-self: flex-end;
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card:hover .cover__card img{
+    transform: scale(1.1);
+}
+
+.cover__card{
+    width: 100%;
+    height: 180px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.cover__card img{
+    width: 110%;
+    transition: all 300ms;
 }
 
 .tituloh1{
   display: flex;
   justify-content: center;
   align-items: center;
+	font-size: 2.4em;
+	color: #40A4FA;
 }
 
 
@@ -123,13 +135,180 @@ body {
   font-weight: 600;
 }
 
+#avisos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 40px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.avisos_heading{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.avisos_heading span{
+	color: #37AFF9
+}
+
+.avisos_heading h3{
+	font-size: 2.4em;
+	color: #4AC7AB;
+}
+
+.avisos_container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+	flex-wrap: wrap;
+}
+
+.avisos_box{
+	width: 350px;
+	border: 1px solid #ececec;
+	margin: 20px;
+}
+
+.avisos_img{
+	width: 100%;
+	height: auto;
+}
+
+.avisos_img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.avisos_text{
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.avisos_text span{
+	color: #95ADC4;
+	font-size: 0.9em;
+
+}
+
+
+
+.container__cards{
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards{
+    width: 350px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
+}
+
+.cards:hover{
+    transform: translateY(-10px);
+}
+
+.cards:hover .cover__card img{
+    transform: scale(1.1);
+}
+
+.cover__card{
+    width: 100%;
+    height: 180px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.cover__card img{
+    width: 110%;
+    transition: all 300ms;
+}
+
+.cards h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #717171;
+}
+
+.cards p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #717171;
+    letter-spacing: 0.5px;
+}
+
+.cards hr{
+    margin-top: 30px;
+    border: none;
+    height: 0.2px;
+    background: #41414138;
+}
+
+.footer__card{
+    margin-top: 10px;
+    display: flex;
+    color: #717171;
+    justify-content: space-between;
+}
+
+.footer__card h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:1200px) {
+    .container__cards{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
 /*media queries*/
 
 @media (max-width: 1030px) {
 	.container{
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		height:auto;
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: none;
+		margin-top: 100px;
+		padding-bottom: 100px;
+		width:100%;
+		height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	}
+	.right-column p{
+		font-size: .6rem;
+		color: var(--black-text)
+	}
+	.right-column h4{
+		font-size: .7rem;
 	}
   }

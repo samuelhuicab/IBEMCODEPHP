@@ -14,9 +14,9 @@
       <nav class = "navoptions">
         <ul>
           <li class="inicio"><a href="http://localhost:8082/IBEMCODEPHP/">Inicio</a></li>
-          <li class="avisos"><a href="#">Avisos</a></li>
+          <li class="avisos"><a href="#activ">Proximas Actividades</a></li>
           <li class="conferencias"><a href="#acthoy">Actividades</a></li>
-          <li class="avisos"><a href="#">Proximas Actividades</a></li>
+          <li class="avisos"><a href="avisos.php#avisos">Avisos</a></li>
           <li class="contacto"><a href="#contactanos">Contáctanos</a></li>
         </ul>
       </nav>
