@@ -51,6 +51,17 @@
             </div>
 
             <div class="box__footer">
+              <h2>Horario Atención</h2>
+              <div class="terms">
+                  <p>Lunes a Viernes</p>
+                  <p>9:00 am a 4:00 pm</p>
+                  <br>
+                  <p>Lunes a Sábado</p>
+                  <p>4:00 pm a 8:00 pm</p>
+              </div>
+            </div>
+
+            <div class="box__footer">
                 <h2>Redes Sociales</h2>
                 <a href="https://www.facebook.com/elmesias.mx" target="_blank"> <i class="fab fa-facebook-square"></i> Facebook</a>
                 <a href="https://www.youtube.com/c/IBEMYucat%C3%A1n" target="_blank"><i class="fa-brands fa-youtube"></i> Youtube</a>

@@ -147,7 +147,7 @@ try {
   </div>
 
 </div>
-<div class="container" style="height: 400px;">
+<div class="container">
 
   <!---Tarjeta 4------->
   <div class="card">
@@ -180,6 +180,32 @@ try {
       </div>
     </div>
 
+
+  </div>
+
+  <div class="card">
+    <div class="left-column background3-left-column">
+      <h6>Boletín IBEM</h6>
+      <h2>Boletín</h2>
+      <i class="fa-solid fa-newspaper"></i>
+    </div>
+
+    <div class="right-column">
+      <div>
+        <h4>Descarga aqui el boletín</h4>
+        <h6>Se actualiza todos los domingos</h6>
+        <br>
+        <br>
+        <br>
+        <div class="itemsmod">
+          <a href="pdf/BoletínIBEM.Abril24.2022.pdf" target="_blank"><i class="fa-solid fa-laptop-file"></i> ‍‍‍‍‍‎ ‏‏‎‏‏‎Visualizar</a>
+        </div>
+        <br>
+        <div class="itemsmod">
+          <a href="pdf/BoletínIBEM.Abril24.2022.pdf" download="BoletínIBEMAbril.24.2022"><i class="fa-solid fa-cloud-arrow-down"></i> ‍ ‍‍‍‍‍‎‏‏‎‏‍Descargar</a>
+        </div>
+      </div>
+    </div>
 
   </div>
 
