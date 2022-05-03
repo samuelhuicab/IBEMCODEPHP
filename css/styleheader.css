@@ -43,6 +43,23 @@ header.abajo{
   align-items: center;
 }
 
+.btn__menu{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background 300ms;
+    display: none;
+}
+
+.btn__menu:hover{
+    background: #f5f5f5;
+}
+
 .navegacion ul li{
   list-style: none;
 }
@@ -96,4 +113,26 @@ header.abajo{
 
 header.abajo ul li a{
   color: #000;
+}
+
+.move_content{
+    right: 180px;
+}
+
+@media (max-width: 1030px) {
+  .logo{
+    height: 40px;
+    width: 100px;
+  }
+
+  }
+@media (max-width: 641px){
+  .navoptions{
+    font-size: 15px;
+  }
+}
+@media (max-width: 610px){
+  .navoptions{
+    font-size: 8px;
+  }
 }

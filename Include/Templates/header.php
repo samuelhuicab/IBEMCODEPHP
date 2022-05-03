@@ -11,6 +11,7 @@
   <body>
     <header class = "navegacion">
       <a href="#"><img class="logo" src="img/logo.png"></a>
+      <div class="btn__menu" id="btn_menu"><i class="fas fa-bars"></i></div>
       <nav class = "navoptions">
         <ul>
           <li class="inicio"><a href="http://localhost:8082/IBEMCODEPHP/">Inicio</a></li>
@@ -30,5 +31,6 @@
       header.classList.toggle("abajo", window.scrollY>100);
     })
     </script>
+
   </body>
 </html>

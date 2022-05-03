@@ -148,3 +148,22 @@ footer{
   justify-content: center;
   align-items: center;
 }
+
+
+@media (max-width: 1030px) {
+  .box__contacto{
+    display: none;
+  }
+  .itemsinformation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+  }
+
+  .tituloh1{
+    font-size: 1.5em
+  }
+
+  }
