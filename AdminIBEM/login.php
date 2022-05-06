@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="plugins/sweetalert2/sweetalert2.all.min.js">
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
@@ -64,41 +65,5 @@
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
 
-<script type="text/javascript">
-$(document).ready(function() {
-        // Login Form
-    $('#login-admin').on('submit', function(e) {
-            e.preventDefault();
-            var datos = $(this).serializeArray();
-            // console.log(datos);
-            $.ajax({
-                type: $(this).attr('method'),
-                data: datos,
-                url: "insertar-admin.php",
-                dataType: 'json',
-                success: function(data) {
-                    console.log(data);
-                    var resultado = data;
-                    if(resultado.resultado == 'exito') {
-                        swal(
-                            'Login Exitoso' ,
-                            'El usuario ' + resultado.usuario  + ' se logueo correctamente',
-                            'success'
-                        )
-                        setTimeout(function(){
-                            window.location.href = 'admin-area.php';
-                        }, 3000);
-                    } else {
-                        swal(
-                            'Error',
-                            'Password Incorrecto o Usuario No existente',
-                            'error'
-                        )
-                    }
-                }
-            });
-    });
-});
-</script>
 </body>
 </html>

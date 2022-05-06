@@ -1,10 +1,5 @@
 <?php include_once 'templates/principalsinanim.php';?>
 
-<head>
-  <script src="plugins/sweetalert2.all.min.js"></script>
-</head>
-
-
 <section class="content-header" style="margin-top: 50px; margin-left: 280px;">
   <div class="container-fluid">
     <div class="row mb-2">
@@ -32,21 +27,21 @@
         <div class="card-body">
           <div class="form-group">
             <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa Nombre">
+            <input type="text"   class="form-control" id="nombre" name="nombre" placeholder="Ingresa Nombre">
           </div>
           <div class="form-group">
             <label for="usuario">Usuario</label>
-            <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Ingresa Usuario">
+            <input type="text" autocomplete="usuario" class="form-control" id="usuario" name="usuario" placeholder="Ingresa Usuario">
           </div>
           <div class="form-group">
             <label for="contraseña">Contraseña</label>
-            <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Contraseña">
+            <input type="password" class="form-control" autocomplete="current-password" id="contraseña" name="contraseña" placeholder="Contraseña">
           </div>
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
           <input type="hidden" name="agregar-admin" value="1">
-          <button type="submit" class="btn btn-success">Crear</button>
+          <button type="submit"  class="btn btn-success">Crear</button>
         </div>
       </form>
     </div>
