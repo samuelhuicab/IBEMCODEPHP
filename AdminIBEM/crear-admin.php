@@ -12,7 +12,7 @@
 
 
 
-<div class="col-md-8" style="margin-left: 280px;" >
+<div class="col-md-6" style="margin-left: 280px;" >
   <!-- /.card-header -->
   <!-- form start -->
   <div class="col-md-12">

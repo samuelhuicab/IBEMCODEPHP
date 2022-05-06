@@ -11,6 +11,8 @@ try {
    require_once('include/funciones/bd_conexion.php');
    $sql = "SELECT img, fecha, titulo, descripcion, lugar,hora,limite FROM proximas_act WHERE STATUS = 'A' ";
    $resultado = $conn->query($sql);
+   $sql2 = "SELECT name FROM boletin_semana";
+   $boletin = $conn->query($sql2);
 } catch (\Exception $e) {
   echo $e->getMessage();
 }
@@ -41,9 +43,6 @@ try {
            </div>
        </div>
        <?php } ?>
-       <?php
-       $conn->close();
-        ?>
    </div>
    </div>
 <!---Fin seccion de avisos------->
@@ -189,7 +188,7 @@ try {
       <h2>Boletín</h2>
       <i class="fa-solid fa-newspaper"></i>
     </div>
-
+      <?php while ($bol = $boletin->fetch_assoc()) { ?>
     <div class="right-column">
       <div>
         <h4>Descarga aqui el boletín</h4>
@@ -198,17 +197,20 @@ try {
         <br>
         <br>
         <div class="itemsmod">
-          <a href="pdf/BoletínIBEM.Abril24.2022.pdf" target="_blank"><i class="fa-solid fa-laptop-file"></i> ‍‍‍‍‍‎ ‏‏‎‏‏‎Visualizar</a>
+          <a href="pdf/<?php echo $bol['name'] ?>" target="_blank"><i class="fa-solid fa-laptop-file"></i> ‍‍‍‍‍‎ ‏‏‎‏‏‎Visualizar</a>
         </div>
         <br>
         <div class="itemsmod">
-          <a href="pdf/BoletínIBEM.Abril24.2022.pdf" download="BoletínIBEMAbril.24.2022"><i class="fa-solid fa-cloud-arrow-down"></i> ‍ ‍‍‍‍‍‎‏‏‎‏‍Descargar</a>
+          <a href="pdf/<?php echo $bol['name'] ?>" download="BOLETINSEMANAL"><i class="fa-solid fa-cloud-arrow-down"></i> ‍ ‍‍‍‍‍‎‏‏‎‏‍Descargar</a>
         </div>
       </div>
     </div>
 
   </div>
-
+  <?php } ?>
+  <?php
+  $conn->close();
+   ?>
 </div>
 <!--- si se desea agregar más tarjetas solo es copiar y pegar, por cada containet solo debe de haber 3 tarjetas------->
 <!--- fin Seccion de actividades------->

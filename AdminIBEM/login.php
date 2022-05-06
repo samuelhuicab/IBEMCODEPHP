@@ -20,7 +20,7 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-danger">
     <div class="card-header text-center">
-      <a href="../../index2.html" class="h1"><b>IBEM </b>WEBADMIN</a>
+      <a href="http://localhost:8082/IBEMCODEPHP/" class="h1"><b>IBEM </b>WEBADMIN</a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Iniciar Sesion</p>
