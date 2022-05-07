@@ -87,4 +87,54 @@ if (isset($_POST['login-admin'])) {
 
  }
 
+ if($_POST['registro'] == 'actualizar') {
+
+     $id_registro = $_POST['id_registro'];
+     $usuario = $_POST['usuario'];
+     $nuevo_password = $_POST['nuevo_password'];
+
+
+     try {
+         $opciones = array(
+             'cost' => 12,
+         );
+         if(empty($_POST['nuevo_password']) && empty($_POST['repetir_password'])) {
+
+             $stmt = $conn->prepare("UPDATE usuariowebadmin SET usuario = ? WHERE usuario_id = ?  ");
+             $stmt->bind_param("si", $usuario, $id_registro);
+
+         } else {
+             $hash_password = password_hash($nuevo_password, PASSWORD_BCRYPT, $opciones);
+             $stmt = $conn->prepare("UPDATE usuariowebadmin SET usuario = ?,  pwd = ? WHERE usuario_id = ?  ");
+             $stmt->bind_param("ssi", $usuario, $hash_password, $id_registro);
+
+         }
+
+         $stmt->execute();
+         if($stmt->affected_rows) {
+             $respuesta = array(
+                 'respuesta' => 'correcto',
+                 'id_actualizado' => $stmt->insert_id
+             );
+
+         } else {
+             $respuesta = array(
+                 'respuesta' => 'error'
+             );
+         }
+         $stmt->close();
+         $conn->close();
+
+     } catch(Exception $e) {
+         $respuesta = array(
+             'respuesta' =>  $e->getMessage()
+         );
+     }
+
+     die(json_encode($respuesta));
+ }
+
+
+
+
  ?>

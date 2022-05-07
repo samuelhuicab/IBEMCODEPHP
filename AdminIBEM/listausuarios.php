@@ -24,7 +24,7 @@ try {
 
 <div class="col-md-8" style="margin-left: 280px;">
 <div class="card-body">
-  <table id="example2" class="table table-bordered table-hover" action="insertboletin.php" enctype="multipart/form-data" method="POST">
+  <table id="listausuarios" class="table table-bordered table-hover">
     <thead>
     <tr>
       <th>ID</th>
@@ -47,9 +47,9 @@ try {
       <td><a href="editarusuario.php?usuario_id=<?php echo$usuarios['usuario_id'];?>"><button type="button" class="btn btn-warning">
         Editar
       </button></td>
-      <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger">
-        Eiminar
-      </button></td>
+      <td><a href="#" data-href="eliminar.php?id=<?php echo $usuarios['usuario_id']; ?>" data-toggle="modal" data-target="#confirm-delete"><button type="button" class="btn btn-danger">
+        Eliminar
+      </button></a></td>
     </tr>
     <?php } ?>
     </tbody>
@@ -69,37 +69,28 @@ try {
 <!-- /.card-body -->
 </div>
 
-<div class="modal fade" id="modal-danger">
-  <div class="modal-dialog">
-    <div class="modal-content bg-danger">
-      <div class="modal-header">
-        <h4 class="modal-title">¿Desea continuar elimando al usuario seleccionado?</h4>
-      </div>
-      <div class="modal-footer justify-content-between">
-        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-outline-light">Continuar</button>
-      </div>
-    </div>
-    <!-- /.modal-content -->
-  </div>
-  <!-- /.modal-dialog -->
-</div>
+<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
 
-<div class="modal fade" id="modal-warning">
-  <div class="modal-dialog">
-    <div class="modal-content bg-warning">
-      <div class="modal-header">
-        <h4 class="modal-title">¿Desea continuar?</h4>
-      </div>
-      <div class="modal-footer justify-content-between">
-        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cerrar</button>
-      <a href="editar.php?usuario_id=<?php echo $usuarios['id']; ?>"><button type="button" class="btn btn-outline-dark">Continuar</button></a>
-      </div>
-    </div>
-    <!-- /.modal-content -->
-  </div>
-  <!-- /.modal-dialog -->
-</div>
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">Eliminar Registro</h4>
+					</div>
+
+					<div class="modal-body">
+						¿Desea eliminar este registro?
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						<a class="btn btn-danger btn-ok">Delete</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
 
 
 <?php
@@ -108,3 +99,10 @@ $conn->close();
 
 
 <?php include_once 'templates/footer2.php';?>
+<script type="text/javascript">
+$('#confirm-delete').on('show.bs.modal', function(e) {
+  $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
+
+  $('.debug-url').html('Delete URL: <strong>' + $(this).find('.btn-ok').attr('href') + '</strong>');
+});
+</script>
