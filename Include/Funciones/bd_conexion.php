@@ -1,5 +1,5 @@
 <?php
-  $conn = new mysqli('localhost','root', 'HsEsp3$6_*', 'ibemdb');
+  $conn = new mysqli('localhost','root', '', 'ibemdb');
   if ($conn->connect_error) {
     echo $error -> connect_error;
   }

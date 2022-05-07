@@ -1,4 +1,8 @@
-<?php include_once 'templates/principal.php';?>
+
+<?php
+include_once 'sesiones.php';
+include_once 'templates/principal.php';
+?>
 
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->

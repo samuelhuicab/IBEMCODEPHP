@@ -1,3 +1,4 @@
+<?php include_once 'sesiones.php'; ?>
 <?php include_once 'templates/principalsinanim.php';?>
 <section class="content-header" style="margin-top: 50px; margin-left: 280px;">
   <div class="container-fluid">
