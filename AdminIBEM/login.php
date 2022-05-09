@@ -1,6 +1,6 @@
 <?php
 session_start();
-$cerrar_session = isset($_GET['cerrar_session']); 
+$cerrar_session = isset($_GET['cerrar_session']);
 if ($cerrar_session) {
   session_destroy();
 }
@@ -13,6 +13,7 @@ if ($cerrar_session) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../img/logo.ico">
   <title>Login IBEM</title>
 
   <!-- Google Font: Source Sans Pro -->

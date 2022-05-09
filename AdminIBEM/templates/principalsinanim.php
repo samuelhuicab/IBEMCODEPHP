@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/logo.ico">
   <title>Administracion IBEM</title>
 
   <!-- Google Font: Source Sans Pro -->
@@ -64,6 +65,41 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
+              <i class="fa-solid fa-school"></i>
+              <p>
+                Escuela Dominical
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/charts/chartjs.html" class="nav-link">
+                  <i class="fa-solid fa-mattress-pillow"></i>
+                  <p>Clases</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/flot.html" class="nav-link">
+                  <i class="fa-solid fa-person-chalkboard"></i>
+                  <p>Maestros</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/flot.html" class="nav-link">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  <p>Alumnos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="asignacionclases.php" class="nav-link">
+                  <i class="fa-solid fa-chalkboard-user"></i>
+                  <p>Asignacion de clases</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
               <i class="fa-solid fa-bullhorn"></i></i>
               <p>
                 Avisos
@@ -72,15 +108,15 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="crearavisos.php" class="nav-link">
                   <i class="fa-solid fa-circle-plus"></i>
                   <p>Subir Aviso</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="pages/charts/flot.html" class="nav-link">
-                  <i class="fa-solid fa-trash"></i>
-                  <p>Eliminar Aviso</p>
+                  <i class="fa-solid fa-list"></i>
+                  <p>Todos los avisos</p>
                 </a>
               </li>
             </ul>
@@ -102,8 +138,8 @@
               </li>
               <li class="nav-item">
                 <a href="pages/UI/icons.html" class="nav-link">
-                  <i class="fa-solid fa-trash"></i>
-                  <p>Eliminar Proxima Actividad</p>
+                  <i class="fa-solid fa-list"></i>
+                  <p>Todos las Proximas Actividades</p>
                 </a>
               </li>
             </ul>

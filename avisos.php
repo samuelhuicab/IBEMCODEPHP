@@ -27,7 +27,7 @@
           <div class="avisos_box">
 
             <div class="avisos_img">
-              <img src="<?php echo $avisos['img']; ?>">
+              <img src="img/<?php echo $avisos['img']; ?>">
             </div>
 
             <div class="avisos_text">
