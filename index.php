@@ -5,6 +5,48 @@
 </head>
 <!--- end head and style------->
 
+<?php
+$versiculos = array(
+  1 => " Vivimos por fe, no por vista. 2 Corintios 5:7",
+  2 => "El que va tras la justicia y el amor halla vida, prosperidad y honra. Proverbios 21:21",
+  3 => "¿De qué sirve ganar el mundo entero si se pierde la vida?. Marcos 8:36",
+  4 => "Podrán desfallecer mi cuerpo y mi espíritu, pero Dios fortalece mi corazón; él es mi herencia eterna. Salmo 73:26",
+  5 => "Guíame, pues eres mi roca y mi fortaleza, dirígeme por amor a tu nombre. Salmo 31:3",
+  6 => "Todo tiene su momento oportuno; hay un tiempo para todo lo que se hace bajo el cielo. Eclesiastés 3:1",
+  7 => "De aquel que cree en mí, como dice la Escritura, brotarán ríos de agua viva. Juan 7:38",
+  8 => "Nunca preguntes por qué todo tiempo pasado fue mejor. No es de sabios hacer tales preguntas. Eclesiastés 7:10",
+  9 => "Busquen la paz con todos, y la santidad, sin la cual nadie verá al Señor. Hebreos 12:14",
+  10 => "El que adquiere cordura a sí mismo se ama, y el que retiene el discernimiento prospera. Proverbios 19:8",
+  11 => "Porque también para este fin os escribí, para tener la prueba de si vosotros sois obedientes en todo. 2 Corintios 2:9",
+  12 => "Antes que te formase en el vientre te conocí, y antes que nacieses te santifiqué, te di por profeta a las naciones. Jeremías 1:5",
+  13 => "No os ha sobrevenido ninguna tentación que no sea humana; pero fiel es Dios, que no os dejará ser tentados más de lo que podéis resistir, sino que dará también juntamente con la tentación la salida, para que podáis soportar. 1 Corintios 10:13",
+  14 => "",
+);
+
+$numero = rand(1,13);
+
+
+
+
+ ?>
+
+<div class="container__banner">
+
+            <div class="banner">
+                <div class="banner__icon-heart">
+                    <img src="img/heart_notify.png" id="icon_heart" alt="">
+                </div>
+                <div class="banner__icon-fire">
+                    <img src="img/fire-dynamic-color.png" id="icon_fire" alt="">
+                </div>
+                <div class="banner__text">
+                    <h2><?php echo $versiculos[$numero]; ?></h2>
+                </div>
+            </div>
+
+        </div>
+
+
 <!---Seccion de avisos------->
 <?php
 try {
@@ -221,3 +263,13 @@ try {
 
 
 <?php include_once 'include/templates/footer.php'; ?>
+
+<script type="text/javascript">
+window.onscroll = function () {
+    var posicion = window.pageYOffset || document.documentElement.scrollTop;
+    var elemento1 = document.getElementById("icon_heart");
+    var elemento2 = document.getElementById("icon_fire");
+    elemento1.style.bottom = posicion * 0.1 + "px";
+    elemento2.style.top = posicion * 0.1 + "px";
+}
+</script>
