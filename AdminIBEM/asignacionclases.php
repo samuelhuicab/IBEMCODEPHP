@@ -121,7 +121,7 @@ try {
           <td> <?php echo $asignacionclase['Maestro']?></td>
           <td><?php echo $asignacionclase['Alumno']?></td>
           <td><?php echo $asignacionclase['Clase']?></td>
-          <td><a href="editarusuario.php?usuario_id=<?php echo$asignacionclase['Asignacion'];?>"><button type="button" class="btn btn-warning">
+          <td><a href="404.php?usuario_id=<?php echo$asignacionclase['Asignacion'];?>"><button type="button" class="btn btn-warning">
             Editar
           </button></td>
           <td><a href="#" data-href="eliminarclass.php?id=<?php echo $asignacionclase['Asignacion']; ?>" data-toggle="modal" data-target="#confirm-delete"><button type="button" class="btn btn-danger">
