@@ -73,19 +73,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="404.php" class="nav-link">
                   <i class="fa-solid fa-mattress-pillow"></i>
                   <p>Clases</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
+                <a href="404.php" class="nav-link">
                   <i class="fa-solid fa-person-chalkboard"></i>
                   <p>Maestros</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
+                <a href="404.php" class="nav-link">
                   <i class="fa-solid fa-graduation-cap"></i>
                   <p>Alumnos</p>
                 </a>
@@ -114,7 +114,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
+                <a href="404.php" class="nav-link">
                   <i class="fa-solid fa-list"></i>
                   <p>Todos los avisos</p>
                 </a>
@@ -131,13 +131,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/UI/general.html" class="nav-link">
+                <a href="404.php" class="nav-link">
                   <i class="fa-solid fa-circle-plus"></i>
                   <p>Subir Proxima Actividad</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/icons.html" class="nav-link">
+                <a href="404.php" class="nav-link">
                   <i class="fa-solid fa-list"></i>
                   <p>Todos las Proximas Actividades</p>
                 </a>
